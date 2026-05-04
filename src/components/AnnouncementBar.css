@@ -1,0 +1,40 @@
+.announcement-bar {
+  background-color: var(--color-primary);
+  color: var(--text-light);
+  padding: 12px 0;
+  overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.announcement-content {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  gap: 60px;
+}
+
+.announcement-text {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .announcement-bar {
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
+
+  .announcement-content {
+    gap: 40px;
+    animation-duration: 15s;
+  }
+}
