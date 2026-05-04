@@ -8,7 +8,7 @@ import ProductGrid from './components/ProductGrid'
 import Cart from './components/Cart'
 import Checkout from './components/Checkout'
 import Wishlist from './components/Wishlist'
-import Footer from './components/Footer'
+
 
 type PageType = 'home' | 'products' | 'cart' | 'checkout' | 'wishlist'
 
@@ -72,7 +72,7 @@ function App() {
         <Wishlist onAddToCart={updateCartCount} onWishlistChange={updateWishlistCount} />
       )}
 
-      <Footer onNavigate={handleNavigate} />
+    
     </div>
   )
 }
